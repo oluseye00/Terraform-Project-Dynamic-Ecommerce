@@ -117,3 +117,16 @@ variable "ec2_keypair_name" {
     description = "ec2 key pair"
     type        = string
 }
+
+# route 53 variables
+variable "domain_name" {
+    default     = "paulowolabi.link"
+    description = "domain name"
+    type        = string
+}
+
+variable "record_name" {
+    default     = "www"
+    description = "sub domain name"
+    type        = string
+}
